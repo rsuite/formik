@@ -1,0 +1,36 @@
+{
+  "name": "@rsuite/formik",
+  "version": "0.0.0-development",
+  "description": "Formik-compatible React Suite components",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsuite/formik.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsuite/formik/issues"
+  },
+  "homepage": "https://github.com/rsuite/formik#readme",
+  "devDependencies": {
+    "@swc-node/jest": "^1.4.3",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "formik": "^2.2.9",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rsuite": "^5.6.6",
+    "typescript": "^4.6.3"
+  }
+}
