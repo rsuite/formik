@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import { render, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import { Formik, Form, Field, FormikProps } from 'formik';
-import _ from 'lodash';
+import { render, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import { Formik, Form, Field, FormikProps } from "formik";
+import _ from "lodash";
 
-import { SelectPicker } from '../SelectPicker';
+import { SelectPicker } from "../SelectPicker";
 
-test('适配 formik', async () => {
+test("适配 formik", async () => {
   const formikRef = React.createRef<FormikProps<any>>();
   const { getByText, getByRole } = render(
     <Formik
       innerRef={formikRef}
       initialValues={{
-        fruit: 'Apple',
+        fruit: "Apple",
       }}
       onSubmit={_.noop}
     >
@@ -23,12 +23,12 @@ test('适配 formik', async () => {
           component={SelectPicker}
           data={[
             {
-              label: 'Apple',
-              value: 'Apple',
+              label: "Apple",
+              value: "Apple",
             },
             {
-              label: 'Banana',
-              value: 'Banana',
+              label: "Banana",
+              value: "Banana",
             },
           ]}
         />
@@ -36,12 +36,12 @@ test('适配 formik', async () => {
     </Formik>
   );
 
-  expect(getByRole('combobox')).toHaveTextContent('Apple');
+  expect(getByRole("combobox")).toHaveTextContent("Apple");
 
-  userEvent.click(getByRole('combobox'));
-  userEvent.click(getByText('Banana'));
+  userEvent.click(getByRole("combobox"));
+  userEvent.click(getByText("Banana"));
 
   await waitFor(() => {
-    expect(formikRef.current.values).toHaveProperty('fruit', 'Banana');
+    expect(formikRef.current?.values).toHaveProperty("fruit", "Banana");
   });
 });

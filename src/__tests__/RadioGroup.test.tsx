@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import { render, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import { Formik, Form, Field, FormikProps } from 'formik';
-import _ from 'lodash';
-import { Radio } from 'rsuite';
+import { render, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import { Formik, Form, Field, FormikProps } from "formik";
+import _ from "lodash";
+import { Radio } from "rsuite";
 
-import { RadioGroup } from '../RadioGroup';
+import { RadioGroup } from "../RadioGroup";
 
-test('适配 formik', async () => {
+test("适配 formik", async () => {
   const formikRef = React.createRef<FormikProps<any>>();
   const { getByLabelText } = render(
     <Formik
       innerRef={formikRef}
       initialValues={{
-        fruit: 'Apple',
+        fruit: "Apple",
       }}
       onSubmit={_.noop}
     >
@@ -27,11 +27,11 @@ test('适配 formik', async () => {
     </Formik>
   );
 
-  expect(getByLabelText('Apple')).toBeChecked();
+  expect(getByLabelText("Apple")).toBeChecked();
 
-  userEvent.click(getByLabelText('Banana'));
+  userEvent.click(getByLabelText("Banana"));
 
   await waitFor(() => {
-    expect(formikRef.current.values).toHaveProperty('fruit', 'Banana');
+    expect(formikRef.current?.values).toHaveProperty("fruit", "Banana");
   });
 });

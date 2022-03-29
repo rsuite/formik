@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import { render, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import { Formik, Form, Field, FormikProps } from 'formik';
-import _ from 'lodash';
-import { Checkbox } from 'rsuite';
+import { render, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import { Formik, Form, Field, FormikProps } from "formik";
+import _ from "lodash";
+import { Checkbox } from "rsuite";
 
-import { CheckboxGroup } from '../CheckboxGroup';
+import { CheckboxGroup } from "../CheckboxGroup";
 
-test('适配 formik', async () => {
+test("适配 formik", async () => {
   const formikRef = React.createRef<FormikProps<any>>();
   const { getByLabelText } = render(
     <Formik
       innerRef={formikRef}
       initialValues={{
-        fruits: ['Apple'],
+        fruits: ["Apple"],
       }}
       onSubmit={_.noop}
     >
@@ -30,11 +30,14 @@ test('适配 formik', async () => {
   // fixme 应该直接断言 .toBeChecked()
   //       这里是 rsuite 的 bug
   //       see https://github.com/rsuite/rsuite/pull/2419
-  expect(getByLabelText('Apple')).toHaveAttribute('aria-checked', 'true');
+  expect(getByLabelText("Apple")).toHaveAttribute("aria-checked", "true");
 
-  userEvent.click(getByLabelText('Banana'));
+  userEvent.click(getByLabelText("Banana"));
 
   await waitFor(() => {
-    expect(formikRef.current.values).toHaveProperty('fruits', ['Apple', 'Banana']);
+    expect(formikRef.current?.values).toHaveProperty("fruits", [
+      "Apple",
+      "Banana",
+    ]);
   });
 });
