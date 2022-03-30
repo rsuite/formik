@@ -2,7 +2,10 @@
 
 Formik-compatible React Suite form components
 
-    npm i rsuite formik @rsuite/formik
+> ## DISCLAIMER
+>
+> This package is still under development (on beta branch) and doesn't have a stable release yet,
+> please use with caution.
 
 ## Usage
 
