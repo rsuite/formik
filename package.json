@@ -24,6 +24,15 @@
     "type": "git",
     "url": "git+https://github.com/rsuite/formik.git"
   },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ]
+  },
   "keywords": [],
   "author": "Doma <leishenghao@126.com>",
   "license": "MIT",
