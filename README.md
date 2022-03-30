@@ -3,7 +3,10 @@
 Formik-compatible React Suite form components
 
     npm i rsuite formik @rsuite/formik@beta
+
 ## Usage
+
+Replace form component imports from `rsuite` with `@rsuite/formik`.
 
 ```jsx
 import { Formik, Form, Field } from "formik";
