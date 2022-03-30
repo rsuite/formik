@@ -2,8 +2,7 @@
 
 Formik-compatible React Suite form components
 
-    npm i rsuite formik @rsuite/formik
-
+    npm i rsuite formik @rsuite/formik@beta
 ## Usage
 
 ```jsx
@@ -22,6 +21,19 @@ render(
   </Formik>
 );
 ```
+
+### Supported rsuite components
+
+- AutoComplete
+- Checkbox
+- CheckboxGroup
+- CheckPicker
+- Input
+- InputNumber
+- RadioGroup
+- SelectPicker
+- TagPicker
+- Toggle
 
 ## License
 
