@@ -16,7 +16,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup src/index.ts --clean --format cjs,esm --dts --inject ./react-import.js --external react",
     "test": "jest",
     "prepublishOnly": "pnpm run build"
   },
