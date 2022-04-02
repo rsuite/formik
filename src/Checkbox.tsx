@@ -18,8 +18,7 @@ export function Checkbox({
       name={field.name}
       checked={field.value}
       onChange={(value, checked, event) => {
-        // todo Use field.onChange() once rsuite checkbox event is fixed
-        form.setFieldValue(field.name, checked);
+        field.onChange(event);
         onChange?.(value, checked, event);
       }}
       {...props}

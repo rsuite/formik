@@ -13,7 +13,7 @@ specifiers:
   prettier: ^2.6.1
   react: ^17.0.2
   react-dom: ^17.0.2
-  rsuite: ^5.6.6
+  rsuite: ^5.7.1
   tsup: ^5.12.1
   typescript: ^4.6.3
 
@@ -30,7 +30,7 @@ devDependencies:
   prettier: 2.6.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  rsuite: 5.6.6_react-dom@17.0.2+react@17.0.2
+  rsuite: 5.7.1_react-dom@17.0.2+react@17.0.2
   tsup: 5.12.1_typescript@4.6.3
   typescript: 4.6.3
 
@@ -3330,8 +3330,8 @@ packages:
       react-is: 17.0.2
     dev: true
 
-  /rsuite/5.6.6_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-N4xnfnOpbxkEQ4+6GP/ll76XC8motkCQUNy1WL5wayZGgmOjzbVLbOUUHn9iGN32sBLyH8/d3Lo/WxfAjprj3g==}
+  /rsuite/5.7.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-vvqBadf9vJ49CW4gboFpj+Ol7M5sK7a72irwQxgxBxHBD2YEWUx9LQp137RIJV6w/nXg1P5yaObZULb5n77QoA==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
