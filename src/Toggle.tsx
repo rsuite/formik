@@ -9,9 +9,7 @@ export function Toggle({ field, meta, form, onChange, ...props }: ToggleProps) {
       name={field.name}
       checked={field.value}
       onChange={(checked, event) => {
-        // todo Use field.onChange once rsuite Toggle event is fixed
-        //      see https://github.com/rsuite/rsuite/pull/2422
-        form.setFieldValue(field.name, checked);
+        field.onChange(event);
         onChange?.(checked, event);
       }}
       {...props}
