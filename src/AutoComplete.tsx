@@ -19,7 +19,10 @@ export function AutoComplete({
     <RsAutoComplete
       {...field}
       onChange={(newValue, event) => {
-        field.onChange(event);
+        // Can't use field.onChange here because event can be other types than ChangeEvent
+        // e.g. MouseEvent from clicking suggested value options
+        //      KeyboardEvent from selecting suggested value options with Enter
+        form.setFieldValue(field.name, newValue);
         onChange?.(newValue, event);
       }}
       {...props}
