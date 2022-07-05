@@ -15,7 +15,7 @@ specifiers:
   prettier: ^2.6.1
   react: ^17.0.2
   react-dom: ^17.0.2
-  rsuite: ^5.8.0
+  rsuite: ^5.8.1
   tsup: ^5.12.1
   typescript: ^4.6.3
 
@@ -34,7 +34,7 @@ devDependencies:
   prettier: 2.6.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  rsuite: 5.8.0_sfoxds7t5ydpegc3knd667wn6m
+  rsuite: 5.15.2_sfoxds7t5ydpegc3knd667wn6m
   tsup: 5.12.1_typescript@4.6.3
   typescript: 4.6.3
 
@@ -2211,7 +2211,7 @@ packages:
     dev: true
 
   /insert-css/2.0.0:
-    resolution: {integrity: sha1-610Ql7dUL0x56jBg067gfQU4gPQ=}
+    resolution: {integrity: sha512-xGq5ISgcUP5cvGkS2MMFLtPDBtrtQPSFfC6gA6U8wHKqfjTIMZLZNxOItQnoSjdOzlXOLU/yD32RKC4SvjNbtA==}
     dev: true
 
   /is-arrayish/0.2.1:
@@ -3317,8 +3317,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /rsuite-table/5.3.6_oxfzelaz5ynxsop2v2nu2h2m64:
-    resolution: {integrity: sha512-PNW0X62hDqxaV2MCLJvLs1nulHfHeTzGIC6B3RBS6GZM8jjc06z33CPBReX/T2wLNZ+d6znimLTZKujvfIZipw==}
+  /rsuite-table/5.6.0_oxfzelaz5ynxsop2v2nu2h2m64:
+    resolution: {integrity: sha512-UWljBH/NKwUNv0260XCACUP9NnKqfKbF7NMKr1EQ/HpOlTLYU+kJO85/v7rNHq5fcuLl6p8xesgObbi35LWThg==}
     peerDependencies:
       prop-types: ^15.7.2
       react: ^0.14.9 || >=15.3.0
@@ -3336,8 +3336,8 @@ packages:
       react-is: 17.0.2
     dev: true
 
-  /rsuite/5.8.0_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-46CMgjyF5Y/BG9z+6TPbozsQV2ef80e6spLP3hHq63EsBpKw2IwuVR9al4rapp1c+8NEMPYd4KFaIIksjp0uqQ==}
+  /rsuite/5.15.2_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-y1NyggwjTMEzPqm6KaW6n59GGGN/z+Po69NF197YhUx3QwROzWgSlZMFVJ9+LIgA6vVcpkYFtzDyXqR2BCmInQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -3357,7 +3357,7 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-virtualized: 9.22.3_sfoxds7t5ydpegc3knd667wn6m
-      rsuite-table: 5.3.6_oxfzelaz5ynxsop2v2nu2h2m64
+      rsuite-table: 5.6.0_oxfzelaz5ynxsop2v2nu2h2m64
       schema-typed: 2.0.2
     dev: true
 
