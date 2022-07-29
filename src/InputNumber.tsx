@@ -23,12 +23,14 @@ export function InputNumber({
       // e.g. MouseEvent from stepUp/stepDown button
       //      KeyboardEvent from ArrowUp/ArrowDown keys
       onChange={(newValue: any, event) => {
-        const parsed = parseFloat(newValue);
+        // DON'T parse newValue as number!
+        // It causes user enable to input zeros after decimal
+        // const parsed = parseFloat(newValue);
 
         // Handle target.value as text
         // copied from field.onChange
         // see https://github.com/jaredpalmer/formik/blob/e677bea8181f40e6762fc7e7fb009122384500c6/packages/formik/src/Formik.tsx#L630
-        form.setFieldValue(field.name, isNaN(parsed) ? newValue : parsed);
+        form.setFieldValue(field.name, newValue);
         onChange?.(newValue, event);
       }}
       {...props}

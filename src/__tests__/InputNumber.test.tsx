@@ -29,7 +29,7 @@ test("适配 formik", async () => {
   userEvent.type(getByRole("spinbutton"), "29");
 
   await waitFor(() => {
-    expect(formikRef.current?.values).toHaveProperty("age", 29);
+    expect(formikRef.current?.values).toHaveProperty("age", "29");
   });
 });
 
@@ -52,12 +52,12 @@ test("点击增加/减少按钮有效", async () => {
   userEvent.click(container.querySelector(".rs-input-number-touchspin-up")!);
 
   await waitFor(() => {
-    expect(formikRef.current?.values.age).toBe(19);
+    expect(formikRef.current?.values.age).toBe("19");
   });
 
   userEvent.click(container.querySelector(".rs-input-number-touchspin-down")!);
 
   await waitFor(() => {
-    expect(formikRef.current?.values.age).toBe(18);
+    expect(formikRef.current?.values.age).toBe("18");
   });
 });
