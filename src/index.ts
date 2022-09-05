@@ -3,6 +3,7 @@ export * from "./Cascader";
 export * from "./Checkbox";
 export * from "./CheckboxGroup";
 export * from "./CheckPicker";
+export * from "./CheckTreePicker";
 export * from "./Input";
 export * from "./InputNumber";
 export * from "./RadioGroup";
