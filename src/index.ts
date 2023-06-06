@@ -11,3 +11,5 @@ export * from "./RadioGroup";
 export * from "./SelectPicker";
 export * from "./TagPicker";
 export * from "./Toggle";
+
+export * from "./formikCompatible";
