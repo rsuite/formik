@@ -13,3 +13,4 @@ export * from "./TagPicker";
 export * from "./Toggle";
 
 export * from "./formikCompatible";
+export { default as formikCompatible } from "./formikCompatible";
